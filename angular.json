@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "taak5"
+    }
+  },
+  "defaultProject": "taak5",
+  "cli": {
+    "analytics": false
+  }
 }
