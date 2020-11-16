@@ -11,15 +11,15 @@ import { User } from './user';
 })
 export class AppComponent implements OnInit{
   @Input()
-  users = [];
+  users;
   title: String = "oefening";
 
   constructor(private apiService: ApiService) {}
 
   ngOnInit(){
-    this.apiService.getUsers().subscribe((res)=>{ 
-      console.log(res);
-      this.users= res;
+    this.apiService.getUsers().subscribe((data)=>{ 
+      console.log(data);
+      this.users= data;
     });
   }
 }
